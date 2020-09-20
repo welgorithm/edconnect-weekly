@@ -6,67 +6,100 @@
         <title> 
               View Project
         </title> 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     </head> 
       
     <body> 
-      <div class="container">
+     
         
-        <nav class="navbar">
-          <div class="navli">
-          <h1 class="projecthead">Project Explorer</h1>
-      <input class="navsearchbar" type="search" placeholder="Search Projects"><input class="navsearchbtn" type="button" value="Search">   
-      
-      <ul>
-          <li class="nav1"><a href="index.html">Home</a></li>
-          <li class="nav2"><a href="createProject.html">Project</a></li>
-      
-      </ul></div>
-         <div class="signupsec"><ul>
-         
-          <li class="nav3"><a href="login.html">Login</a></li>
-          <li class="nav4"><a href="register.html">Sign Up</a></li></div>
-      </ul>
-      
-      </nav>
-      <div class="viewhead">
-          <div class="edithead1"><h3>Project 4</h3></div> 
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">Project Explorer</a>
+  
+          <form class="form-inline my-2 my-lg-0" name="prp">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search Projects">
+              <button type="button" class="btn btn-outline-light btn-margin-left">Search</button> 
+   
+                  </form>
+  
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="createProject.html">Submit</a>
+            </li>
+          </ul>
+  
+              <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+           </ul>
           
+        </nav>
+
+
+      <br><br><br>
+
+      <div class="container">
+
+
+      <h3 class="h3">Project 4</h3> 
+         <div class="row justify-content-between d-flex p-2 bg-secondary text-white">
+          <div class="col"><p> Program<br> Software Engineering</p></div>
+          <div class="col"><p>Matriculation<br> 19/2584</p></div>
+          <div class="col"><p>Graduation Year<br> 2019</p></div>
         
-            
-            <div class="viewhead2">
-             <ul>
-               <li>Created By: <br>Mishael Gebre</li>
-               <li>Date Created: <br>03/03/2020</li>
-               <li>Last Updated: <br>04/04/2020</li>
-             </ul>
-             <a href="http://localhost:4000/project-explorer/editProject.html">
-             <input class="viewheadbtn" type="submit" value="Edit Project"></a></div>
-           </div>
+       <div class="col"> <a href="editProject.html"><button class="btn btn-primary" type="submit">Edit Project</button></a></div>
+      </div>
         
-        <div class="viewcontent">
-        <div class="viewcontent1">
-          <h2>Project Abstract</h2><hr>
+<br>
+        
+        
+        <div class="row">
+          <div class="col">
+            <h3>Project Abstract</h3><hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
 
-        <div class="viewcontent2">
-        <h2>Project Details</h2><hr>
-        <div></div>
-        
-            <p class="viewc1">Author(s)</p> <p class="viewc2">Mishael Gebre</p><p class="viewc3"> Weldo Takashuki</p>
-            <p class="viewc4">Tgas: #yaml, #ejs</p>
-            
-            
-            
-            <p class="viewc5">Project Files: <a href="">File 1</a> <a href="">File 2</a></p>
+        <h4 class="h4">Comments</h4>
+        <textarea class="form-control">Leave a comment</textarea><br>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <hr><p class="text-center">No comments added yet</p>
         
       </div>
+          <div class="col">
+            <h3>Project Details</h3><hr>
+
+            <div class="card">
+              <div class="card-header h6">Project Files</div>
+              <div class="card-body h6 text-center">Tom DAVIES</div><hr>
+              <div class="card-body h6 text-center">Mishael Gebre</div>
+              <div class="card-footer h6">#javascript #html</div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="card-header h6">Project Files</div>
+              <div class="card-body h6 text-center">No file uploaded yet</div>
+            </div>
+          </div>
+          
         </div>
 
+        
 
+        <div class="footer">
+          <p>Project Explorer © 2020 Babcock University</p>
+          
+          
+          </div>
 
       </div>
     </body> 
